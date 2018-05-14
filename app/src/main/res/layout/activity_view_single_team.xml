@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/team_in_tunnel"
+    tools:context="lol.footballsimulation.ViewSingleTeamActivity">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:background="#7f000000">
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/teamNameView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textSize="36sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Offense:"
+        android:id="@+id/totalOffense"
+        android:layout_below="@+id/teamNameView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/totalOffenseNumber"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:layout_above="@+id/passingOffenseView"
+        android:layout_toRightOf="@+id/totalOffense"
+        android:layout_toEndOf="@+id/totalOffense"
+        android:paddingLeft="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passing Offense:"
+        android:id="@+id/passingOffenseView"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:layout_below="@+id/totalOffense"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/passingOffenseNumber"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:paddingLeft="16dp"
+        android:layout_alignTop="@+id/passingOffenseView"
+        android:layout_toRightOf="@+id/passingDefenseView"
+        android:layout_toEndOf="@+id/passingDefenseView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rushing Offense:"
+        android:id="@+id/rushingOffenseView"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:layout_below="@+id/passingOffenseView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/rushingOffenseNumber"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/rushingOffenseView"
+        android:layout_toRightOf="@+id/rushingOffenseView"
+        android:layout_toEndOf="@+id/rushingOffenseView"
+        android:paddingLeft="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Defense:"
+        android:id="@+id/totalDefenseView"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:layout_below="@+id/rushingOffenseView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/totalDefenseNumber"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:layout_above="@+id/passingDefenseView"
+        android:layout_toRightOf="@+id/totalOffense"
+        android:layout_toEndOf="@+id/totalOffense"
+        android:paddingLeft="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Passing Defense:"
+        android:id="@+id/passingDefenseView"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:layout_below="@+id/totalDefenseView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/passingDefenseNumber"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/passingDefenseView"
+        android:layout_alignRight="@+id/rushingOffenseNumber"
+        android:layout_alignEnd="@+id/rushingOffenseNumber"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rushing Defense:"
+        android:id="@+id/rushingDefenseView"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:layout_below="@+id/passingDefenseView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/rushingDefenseNumber"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:layout_below="@+id/passingDefenseNumber"
+        android:layout_alignLeft="@+id/passingDefenseNumber"
+        android:layout_alignStart="@+id/passingDefenseNumber"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Field Goal Percentage:"
+        android:id="@+id/fieldGoalView"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:layout_below="@+id/rushingDefenseView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kickoff Average:"
+        android:id="@+id/kickAverageView"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:layout_below="@+id/fieldGoalView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Punt Average:"
+        android:id="@+id/puntAverageView"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:layout_below="@+id/kickAverageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kick Return Average:"
+        android:id="@+id/KRview"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:layout_below="@+id/puntAverageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Punt Return Average:"
+        android:id="@+id/PRview"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:layout_below="@+id/KRview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/fieldGoalNumber"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/fieldGoalView"
+        android:layout_toRightOf="@+id/fieldGoalView"
+        android:layout_toEndOf="@+id/fieldGoalView"
+        android:paddingLeft="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/kickAverageNumber"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:paddingLeft="16dp"
+        android:layout_above="@+id/puntAverageView"
+        android:layout_toRightOf="@+id/kickAverageView"
+        android:layout_toEndOf="@+id/kickAverageView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/puntAverageNumber"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:paddingLeft="16dp"
+        android:layout_above="@+id/KRview"
+        android:layout_toRightOf="@+id/puntAverageView"
+        android:layout_toEndOf="@+id/puntAverageView"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/kickReturnAverageNumber"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:paddingLeft="16dp"
+        android:layout_above="@+id/PRview"
+        android:layout_toRightOf="@+id/KRview"
+        android:layout_toEndOf="@+id/KRview"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:id="@+id/puntReturnAverageNumber"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp"
+        android:paddingLeft="16dp"
+        android:layout_alignBottom="@+id/PRview"
+        android:layout_toRightOf="@+id/PRview"
+        android:layout_toEndOf="@+id/PRview"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="lol.footballsimulation.MainActivity"
+    android:background="@drawable/wall_paper1">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Team"
+        android:id="@+id/newTeam"
+        android:width="180dp"
+        android:height="284dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#cfff6f00"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Teams"
+        android:id="@+id/viewTeam"
+        android:background="#ca51b6fe"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:width="180dp"
+        android:height="284dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simulate  Single Game"
+        android:id="@+id/simulateGame"
+        android:background="#caff0011"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="0.5"
+        android:height="284dp"
+        android:width="180dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aaron&apos;s Ultimate NFL Simulation"
+        android:id="@+id/title"
+        android:background="#ca51fe57"
+        android:textColor="#ffffff"
+        android:width="180dp"
+        android:height="284dp"
+        android:layout_below="@+id/viewTeam"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="30sp" />
+</RelativeLayout>

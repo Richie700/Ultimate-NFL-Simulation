@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rookie_background2"
+    tools:context="lol.footballsimulation.AddTeamActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:foreground="#9b000000">
+    </FrameLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFFFFF"
+        android:id="@+id/teamNameView"
+        android:hint="New team name"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/puntReturnAverage"
+        android:layout_alignStart="@+id/puntReturnAverage"
+        android:layout_marginTop="47dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFFFFF"
+        android:id="@+id/passingOffense"
+        android:hint="Passing offense per game"
+        android:inputType="number"
+        android:layout_below="@+id/teamNameView"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rushingOffense"
+        android:hint="Rushing offense per game"
+        android:inputType="number"
+        android:layout_below="@+id/passingOffense"
+        android:layout_alignLeft="@+id/passingOffense"
+        android:layout_alignStart="@+id/passingOffense"
+        android:textColorHint="#ffffff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/passingDefense"
+        android:hint="Passing defense per game"
+        android:inputType="number"
+        android:layout_below="@+id/rushingOffense"
+        android:layout_alignLeft="@+id/rushingOffense"
+        android:layout_alignStart="@+id/rushingOffense"
+        android:textColorHint="#ffffff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rushingDefense"
+        android:hint="Rushing defense per game"
+        android:inputType="number"
+        android:layout_below="@+id/passingDefense"
+        android:layout_alignLeft="@+id/passingDefense"
+        android:layout_alignStart="@+id/passingDefense"
+        android:textColorHint="#ffffff"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm New Team"
+        android:id="@+id/confirm"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/kickReturnAverage"
+        android:layout_alignStart="@+id/kickReturnAverage"
+        android:layout_alignRight="@+id/kickReturnAverage"
+        android:layout_alignEnd="@+id/kickReturnAverage"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fieldGoalPercentage"
+        android:hint="field goal percentage"
+        android:inputType="number"
+        android:layout_below="@+id/rushingDefense"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#ffffff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yardsPerPunt"
+        android:hint="Average yards per punt"
+        android:inputType="number"
+        android:layout_below="@+id/fieldGoalPercentage"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#ffffff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yardsPerKickoff"
+        android:hint="average yards per kickoff"
+        android:inputType="number"
+        android:layout_below="@+id/yardsPerPunt"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#ffffff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/puntReturnAverage"
+        android:hint="Punt return average"
+        android:inputType="number"
+        android:layout_below="@+id/yardsPerKickoff"
+        android:layout_alignRight="@+id/fieldGoalPercentage"
+        android:layout_alignEnd="@+id/fieldGoalPercentage"
+        android:textColorHint="#ffffff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/kickReturnAverage"
+        android:hint="Kick return average"
+        android:inputType="number"
+        android:layout_below="@+id/puntReturnAverage"
+        android:layout_alignRight="@+id/puntReturnAverage"
+        android:layout_alignEnd="@+id/puntReturnAverage"
+        android:textColorHint="#ffffff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter New Team Stats"
+        android:id="@+id/textView"
+        android:textColor="#ffffff"
+        android:textSize="24sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
